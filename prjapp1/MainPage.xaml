@@ -1,0 +1,71 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjapp1.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="30,0" Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Choisir un prénom et une année de naissance"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+                x:Name="NameEntry"
+                Placeholder="Entrez votre prénom"
+                SemanticProperties.Description="Enter your first name" />
+
+            <Picker
+                x:Name="YearPicker"
+                Title="Année de naissance"
+                SemanticProperties.Description="Select your birth year">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>2003</x:Int32>
+                        <x:Int32>2004</x:Int32>
+                        <x:Int32>2005</x:Int32>
+                        <x:Int32>2006</x:Int32>
+                        <x:Int32>2007</x:Int32>
+                        <x:Int32>2008</x:Int32>
+                        <x:Int32>2009</x:Int32>
+                        <x:Int32>2010</x:Int32>
+                        <x:Int32>2011</x:Int32>
+                        <x:Int32>2012</x:Int32>
+                        <x:Int32>2013</x:Int32>
+                        <x:Int32>2014</x:Int32>
+                        <x:Int32>2015</x:Int32>
+                        <x:Int32>2016</x:Int32>
+                        <x:Int32>2017</x:Int32>
+                        <x:Int32>2018</x:Int32>
+                        <x:Int32>2019</x:Int32>
+                        <x:Int32>2020</x:Int32>
+                        <x:Int32>2021</x:Int32>
+                        <x:Int32>2022</x:Int32>
+                        <x:Int32>2023</x:Int32>
+                        <x:Int32>2024</x:Int32>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button
+                x:Name="SubmitButton"
+                Text="Soumettre"
+                HorizontalOptions="Fill"
+                Clicked="OnSubmitClicked" />
+
+            <Label
+                x:Name="ResultLabel"
+                Text=""
+                TextColor="Black"
+                FontSize="Medium"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

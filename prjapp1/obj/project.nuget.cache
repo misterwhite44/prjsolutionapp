@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KFzjnnOWEnU=",
+  "success": false,
+  "projectFilePath": "/Users/louisboucard/RiderProjects/prjapp1/prjapp1/prjapp1.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "La version de la plateforme n'est pas présente pour un ou plusieurs frameworks cibles, même s'ils ont spécifié une plateforme : net8.0-android, net8.0-ios, net8.0-maccatalyst"
+    }
+  ]
+}
