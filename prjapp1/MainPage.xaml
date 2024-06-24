@@ -8,7 +8,7 @@
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="" />
 
             <Label
                 Text="Choisir un prénom et une année de naissance"
